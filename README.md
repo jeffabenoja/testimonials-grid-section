@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Go Here](https://github.com/jeffabenoja/testimonials-grid-section.git)
+- Solution URL: [See Solution](https://github.com/jeffabenoja/testimonials-grid-section.git)
 - Live Site URL: [Go to Site](https://jeffabenoja.github.io/testimonials-grid-section/)
 
 ## My process
