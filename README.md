@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- FrontEnd URL: [Go Here](https://your-solution-url.com)
-- Live Site URL: [Go to Site](https://your-live-site-url.com)
+- Solution URL: [Go Here](https://github.com/jeffabenoja/testimonials-grid-section.git)
+- Live Site URL: [Go to Site](https://jeffabenoja.github.io/testimonials-grid-section/)
 
 ## My process
 
