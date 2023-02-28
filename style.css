@@ -1,0 +1,337 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Root */
+
+:root {
+    --clr-primary-100: hsl(0, 0%, 100%);
+    --clr-primary-200: hsl(217, 19%, 35%);
+    --clr-primary-300: hsl(219, 29%, 14%);
+    --clr-primary-accent: hsl(263, 55%, 52%);
+
+    --clr-neutral-100: hsl(0, 0%, 81%);
+    --clr-neutral-200: hsl(210, 46%, 95%);
+
+    --fs-sm: 1.1rem;
+    --fs-md: 1.3rem;
+    --fs-lg: 2rem;
+
+    --fw-semi-bold: 500;
+    --fw-bold: 600;
+
+    --fs-body: var(--fs-md);
+
+    --padding-sm: 1.6rem;
+    --padding-md: 2.4rem;
+    --padding-mdx: 2.6rem;
+    --padding-lg: 3.2rem;
+
+    --gap-50: 1.6rem;
+    --gap-100: 1.7rem;
+    --gap-200: 1.8rem;
+    --gap-400: 2.4rem;
+    --gap-700: 3rem;
+    --gap-900: 4rem;
+}
+
+/* Utilities */
+.clr-primary-100 {
+    color: var(--clr-primary-accent);
+}
+.clr-primary-200 {
+    color: var(--clr-primary-200);
+}
+.clr-primary-300 {
+    color: var(--clr-primary-300);
+}
+.clr-primary-accent {
+    color: var(--clr-primary-accent);
+}
+
+.clr-neutral-100 {
+    color: var(--clr-neutral-100);
+}
+
+.clr-neutral-200 {
+    color: var(--clr-neutral-200)
+}
+
+.bg-primary-100 {
+    background-color: var(--clr-primary-100);
+}
+.bg-primary-200 {
+    background-color: var(--clr-primary-200);
+}
+.bg-primary-300 {
+    background-color: var(--clr-primary-300);
+}
+.bg-primary-accent {
+    background-color: var(--clr-primary-accent);
+}
+
+.bg-neutral-100 {
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-200 {
+    background-color: var(--clr-neutral-200)
+}
+
+.b-shadow {
+    -webkit-box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.25);
+    -moz-box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.25);
+    -o-box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.25);
+    box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.25);
+}
+
+.fs-sm {
+    font-size: var(--fs-sm);
+}
+.fs-md {
+    font-size: var(--fs-md);
+}
+.fs-lg {
+    font-size: var(--fs-lg);
+}
+
+.fs-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fs-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fs-heading {
+    font-size: var(--fs-lg);
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+.opacity-70 {
+    opacity: 0.7;
+}
+
+.grid-container, .grid-sub-container {
+    display: grid;
+}
+
+.flex-container {
+    display: flex;
+    /* gap: 1.7rem; */
+}
+
+.flex-align-items {
+    align-items: center;;
+}
+
+.gap-50 {
+    gap: var(--gap-50);
+}
+.gap-100 {
+    gap: var(--gap-100);
+}
+.gap-200 {
+    gap: var(--gap-200);
+}
+.gap-400 {
+    gap: var(--gap-400);
+}
+.gap-700 {
+    gap: var(--gap-700);
+}
+.gap-900 {
+    gap: var(--gap-900);
+}
+
+.push-gap {
+    gap: var(--gap-100);
+}
+
+.testimonials {
+    display: grid;
+    position: relative;
+    border-radius: 0.8rem;
+    padding: var(--padding-mdx) var(--padding-lg) var(--padding-lg);
+    color: var(--clr-primary-100);
+}
+
+.icons{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semi-bold);
+    /* line-height: 24px; */
+}
+
+p {
+    line-height: 18px;
+    color: var(--clr-neutral-100);
+}
+/* Custom Styling */
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: var(--fs-body);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    padding: 7.1rem 2.4rem;
+    display: grid;
+    place-items: center;
+}
+
+.grid-container {
+    margin-inline: auto;
+    gap: var(--gap-400);
+}
+
+@media only screen and (min-width: 720px) {
+    .gap-50-md {
+        gap: var(--gap-50);
+    }
+
+    .gap-400-md {
+        gap: var(--gap-400);
+    }
+
+    .padding-md-y {
+        padding-bottom: var(--padding-md);
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--gap-400) var(--gap-700);
+        grid-template-areas: 
+            "kira patrick patrick jonathan "
+            "kira jeanette daniel daniel";
+    }
+
+    .testimonials:first-child {
+        grid-area: daniel;
+    }
+
+    .testimonials:nth-child(2) {
+        grid-area: jonathan;
+    }
+    
+    .testimonials:nth-child(3) {
+        grid-area: jeanette;
+    }
+    
+    .testimonials:nth-child(4) {
+        grid-area: patrick;
+    }
+    .testimonials:last-child {
+        grid-area: kira;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        padding: 0;
+    }
+
+    .grid-container {
+        width: 1110px;
+        grid-template-areas: 
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+    }
+}
+
+.testimonials:first-child::before {
+    content: url(./images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 0;
+    right: 24px;
+    z-index: 1;
+}
+
+.testimonial-title {
+    z-index: 2;
+}
+
+.daniel-icon {
+    border: 2px solid hsla(264, 82%, 70%, 1);
+}
+
+.daniel-p-desc {
+    padding-right: calc(4.8rem - var(--padding-lg));
+}
+
+@media (min-width: 720px) {
+    .daniel-p-desc {
+        padding-right: 0;
+    }
+    .testimonials:first-child::before {
+        right: 85px;
+    }
+}
+
+.patrick-icon {
+    border: 2px solid hsla(263, 55%, 52%, 1);
+}
+
+.person--name {
+    font-size: var(--fs-md);
+    margin-bottom: 0.4rem;
+}
+.person--verified {
+    font-size: var(--fs-sm);
+}
+
+.person-details p {
+    line-height: 13px;
+}
